@@ -1,0 +1,10 @@
+div[aria-hidden='true'] {
+display:none;
+}
+
+li[aria-selected='true'] {
+color:black;
+background-color:#fff;
+border-bottom:1px solid white;
+}
+

@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Exemplo de Tab Panels</title>
+<script type="text/javascript" src=".\Jquery.js"></script>
+<script type="text/javascript" src="a.\ctions.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div id="main">
+<ul class="tablist" role="tablist">
+<li id="tab1" class="tab" aria-controls="panel1" aria-selected="true" role="tab" tabindex="0">Plano de aula</li>
+<li id="tab2" class="tab" aria-controls="panel2" role="tab" tabindex="0">Controle de frequência</li>
+<li id="tab3" class="tab" aria-controls="panel3" role="tab" tabindex="0">Ocorrências</li>
+</ul>
+<div id ="panel1" class="panel" aria-labelledby="tab1" aria-hidden="false" role="tabpanel">
+<h3>Planejamento da aula</h3>
+		</div>
+<div id ="panel2" class="panel" aria-labelledby="tab2" aria-hidden="true" role="tabpanel">
+<h3>Controle de frequência</h3>
+</div>
+<div id ="panel3" class="panel" aria-labelledby="tab3" aria-hidden="true" role="tabpanel">
+<h3>Painel de ocorrências</h3>
+</div>
+</div>
+</body>
+</html>

@@ -1,3 +1,22 @@
+ul.tablist {
+padding:0px;
+margin:0px;
+width:100%;
+list-style:none;
+text-align:center;
+}
+
+li.tab {
+display:inline;
+}
+
+li.tab a {
+padding:2px 20px;
+display:inline-block;
+text-decoration: none;
+text-size:14pt;
+}
+
 div[aria-hidden='true'] {
 display:none;
 }

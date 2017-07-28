@@ -1,25 +1,42 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
+<meta charset="iso-8859-1" />
 <title>Exemplo de Tab Panels</title>
-<script type="text/javascript" src="Jquery.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="actions.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
 <div id="main">
 <ul class="tablist" role="tablist">
-<li id="tab1" class="tab" aria-controls="panel1" aria-selected="true" role="tab" tabindex="0">Plano de aula</li>
-<li id="tab2" class="tab" aria-controls="panel2" role="tab" tabindex="0">Controle de frequência</li>
-<li id="tab3" class="tab" aria-controls="panel3" role="tab" tabindex="0">Ocorrências</li>
+<li id="tab1" class="tab" aria-controls="panel1" aria-selected="true" role="tab" tabindex="0">Guia 1</li>
+<li id="tab2" class="tab" aria-controls="panel2" role="tab" tabindex="0">Guia 2</li>
+<li id="tab3" class="tab" aria-controls="panel3" role="tab" tabindex="0">Guia 3</li>
+<li id="tab4" class="tab" aria-controls="panel4" role="tab" tabindex="0">Guia 4</li>
 </ul>
 <div id ="panel1" class="panel" aria-labelledby="tab1" aria-hidden="false" role="tabpanel">
-<h3>Planejamento da aula</h3>
-		</div>
+<h3>Guia 1</h3>
+<p>Este é um Painel de Guias Acessível, compatível com JAWS e NVDA, construído com CSS, JQuery e HTML5 usando Way-aria.</p>
+<p>Adaptação feita por Leonardo Gleison Ferreira do modelo disponível na página: http://accessibility.athena-ict.com/aria/examples/tabpanel2.shtml.</p>
+<p>Estas Abas podem ser clicadas com o mouse para mostrar as guias ocultas.</p>
+<p><a href="exemplo.tgz">Download do exemplo (Arquivo tgz 78KB")</a></p>
+</div>
 <div id ="panel2" class="panel" aria-labelledby="tab2" aria-hidden="true" role="tabpanel">
-<h3>Controle de frequência</h3>
+<h3>Guia 2</h3>
+<p>Quando Estas guias estão presentes em sites, incluindo os sites do Google, frequentemente, nós, pessoas com deficiência visual, não conseguimos ler usando a tecla tab ou as setas de navegação, motivo pelo qual usei o atributo tabindex=”0” em todos os elementos “li” da barra de guias, o que viabiliza que esses elementos recebam o foco de navegação.</p>
+<p>A segunda função no arquivo actions.js permite que as setas possam ser utilizadas para navegar entre as guias, mudando automaticamente o painel ativo, ao mesmo tempo que força o leitor de telas a ler a guia selecionada setando o foco de navegação para o elemento.</p>
+<p>Além disso ela permite que o usuário pressione “Enter” para mostrar o painel quando navegar usando a tecla tab.</p>
 </div>
 <div id ="panel3" class="panel" aria-labelledby="tab3" aria-hidden="true" role="tabpanel">
-<h3>Painel de ocorrências</h3>
+<h3>Guia 3</h3>
+<p>Acredito que você que obteve acesso a este exemplo não tenha dificuldades para entender o código, mas vou procurar melhorá-lo ao longo do tempo ou escrever um tutorial para ensinar de uma forma mais didática.</p>
+/div>
+<div id ="panel4" class="panel" aria-labelledby="tab3" aria-hidden="true" role="tabpanel">
+<h3>Guia 4</h3>
+<p>Caso queira entrar em contato para tirar alguma dúvida, o meu e-mail é: leonardo.gleison@gmail.com.</p>
+<p>http://www.facebook.com/leonardo.gleison</p>
+<p>http://www.twitter.com/leonardo_gf</p>
 </div>
 </div>
 </body>

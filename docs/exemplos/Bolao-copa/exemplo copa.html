@@ -1,0 +1,39 @@
+como está:
+<div class="selo " align="center" data-time1="Catar" data-time2="Equador" data-fase="Fase de Grupos | 1ª rodada" data-grupo="A" style="">
+<div id="jogo">
+<div class="time">
+<img src="img/qatar.svg">
+<p class="pais">CAT</p>
+</div>
+<input type="tel" maxlength="2" size="2" onkeyup="if (!window.__cfRLUnblockHandlers) return false; this.value=this.value.replace(/[^0-9]/g,'')" name="palpites[1][time1]" value="">
+<h3>X</h3>
+<input type="tel" maxlength="2" size="2" onkeyup="if (!window.__cfRLUnblockHandlers) return false; this.value=this.value.replace(/[^0-9]/g,'')" name="palpites[1][time2]" value="">
+<div class="time">
+<img src="img/equador.svg">
+<p class="pais">EQU</p>
+</div>
+</div>
+<div class="item">
+<p>GRUPO <b>A</b> &nbsp; | &nbsp; 20/11/2022 13:00:00</p>
+</div>
+</div>
+
+Como deveria ser:
+<div class="selo " align="center" data-time1="Catar" data-time2="Equador" data-fase="Fase de Grupos | 1ª rodada" data-grupo="A" style="">
+<div id="jogo">
+<div class="time">
+<img src="img/qatar.svg" alt="Bandeira do Qatar">
+<p id="palpites-1-time1" class="pais">Catar</p>
+</div>
+<input aria-labelledby="palpites-1-time1" type="tel" maxlength="2" size="2" onkeyup="if (!window.__cfRLUnblockHandlers) return false; this.value=this.value.replace(/[^0-9]/g,'')" name="palpites[1][time1]" value="">
+<h3>X</h3>
+<input aria-labelledby="palpites-1-time2" type="tel" maxlength="2" size="2" onkeyup="if (!window.__cfRLUnblockHandlers) return false; this.value=this.value.replace(/[^0-9]/g,'')" name="palpites[1][time2]" value="">
+<div class="time">
+<img src="img/equador.svg" alt="Bandeira do Equador">
+<p id="palpites-1-time2" class="pais">Equador</p>
+</div>
+</div>
+<div class="item">
+<p>GRUPO <b>A</b> &nbsp; | &nbsp; 20/11/2022 13:00:00</p>
+</div>
+</div>
